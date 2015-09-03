@@ -1,0 +1,12 @@
+{
+  "description": "A sample Blynk app in javascript",
+  "scripts": {
+  	"start": "node src/index.js"
+  },
+  "dependencies": {
+    "blynk-library": "^0.0.12",
+    "grunt-cli": "^0.1.13",
+    "grunt-execute": "^0.2.2"
+  }
+  
+}
