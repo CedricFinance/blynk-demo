@@ -49,3 +49,12 @@ v9.on('read', function() {
 
 blynk.on('connect', function() { console.log("Blynk ready."); });
 blynk.on('disconnect', function() { console.log("DISCONNECT"); });
+
+var express = require('express');
+var app = express();
+
+app.get('/', function(req, res) {
+  res.send('Hello World');
+})
+
+app.listen(process.env.PORT || 9000);
