@@ -1,7 +1,9 @@
+var path = require('path');
+
 var Blynk = require('blynk-library');
 
 var blynk = new Blynk.Blynk('39ecca5ed5c748899d321d1b14b4d3ba', options = {
-    connector : new Blynk.TcpClient()
+  certs_path: path.resolve(__dirname, '..', 'node_modules/blynk-library/certs')
 });
 
 var lightValue = 0;
